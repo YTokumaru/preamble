@@ -1,0 +1,28 @@
+\usepackage{amsmath}        % align etc.
+\usepackage{amssymb}        % \therefore etc.
+
+% Add numbers to equations inside silenced (*) environments
+\newcommand{\numberthis}{\addtocounter{equation}{1}\tag{\theequation}}
+
+\usepackage{amsfonts}    % Fonts for maths
+
+% Set related math commands
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\K}{\ensuremath{\mathbb{K}}}
+
+\usepackage{physics2}
+
+% Physics related commands
+\newcommand{\Lagr}{\ensuremath{\mathcal{L}}}     % Lagrangian
+\newcommand{\Ham}{\ensuremath{\mathcal{H}}}      % Hamiltonian
+
+\usepackage[per-mode=symbol]{siunitx}           % Unit setting
+
+\usepackage{cancel}             % Cancel terms in equations
+
+\usepackage[many]{tcolorbox}      % Highlight equations
+\newcommand{\highlight}[1]{\ensuremath\tcbhighmath{#1}}
