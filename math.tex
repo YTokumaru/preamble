@@ -1,10 +1,9 @@
+\usepackage{unicode-math}
+
 \usepackage{amsmath}        % align etc.
-\usepackage{amssymb}        % \therefore etc.
 
 % Add numbers to equations inside silenced (*) environments
 \newcommand{\numberthis}{\addtocounter{equation}{1}\tag{\theequation}}
-
-\usepackage{amsfonts}    % Fonts for maths
 
 % Set related math commands
 \newcommand{\N}{\ensuremath{\mathbb{N}}}
@@ -14,11 +13,11 @@
 \newcommand{\C}{\ensuremath{\mathbb{C}}}
 \newcommand{\K}{\ensuremath{\mathbb{K}}}
 
-\usepackage{physics}
-
 % Physics related commands
 \newcommand{\Lagr}{\ensuremath{\mathcal{L}}}     % Lagrangian
 \newcommand{\Ham}{\ensuremath{\mathcal{H}}}      % Hamiltonian
+\newcommand{\vb}[1]{\ensuremath{\mathbb{#1}}}
+\newcommand{\pdv}[2]{\ensuremath{\frac{\partial #1}{\partial #2}}}
 
 \usepackage[per-mode=symbol]{siunitx}           % Unit setting
 
