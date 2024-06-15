@@ -4,6 +4,12 @@
 \usepackage{amsmath}        % align etc.
 
 \usepackage[per-mode=symbol]{siunitx}           % Unit setting
+\sisetup{
+    inter-unit-product=\ensuremath{\cdot},
+}
+\DeclareSIUnit{\Bit}{bit}
+\DeclareSIUnit{\Byte}{byte}
+\DeclareSIUnit{\decade}{decade}
 
 \usepackage{cancel}             % Cancel terms in equations
 
