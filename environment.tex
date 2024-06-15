@@ -7,7 +7,7 @@
 \definecolor{theorem}{rgb}{0.82, 0.41, 0.12}
 \definecolor{corollary}{rgb}{0.5, 0.0, 0.13}
 \definecolor{lemma}{rgb}{0.82, 0.71, 0.55}
-\definecolor{eg}{rgb}{0.5, 0.5, 0.5}
+\definecolor{eg}{rgb}{0.03, 0.48, 0.5}
 
 %　Prefab for environments
 \tcbset{prefab/.style={
@@ -27,7 +27,7 @@
 		}}
 
 % theorem environment
-\newtcbtheorem[number within=section]{theorem}{定理}%
+\newtcbtheorem[number within=section]{theorem}{Theorem}%
 {
 	prefab,
 	colframe=theorem,
@@ -37,7 +37,7 @@
 }{thm}
 
 % proposition environment
-\newtcbtheorem[number within=section]{proposition}{命題}%
+\newtcbtheorem[number within=section]{proposition}{Proposition}%
 {
 	prefab,
 	colframe=proposition,
@@ -47,7 +47,7 @@
 }{prop}
 
 % corollary environment
-\newtcbtheorem[number within=section]{corollary}{系}%
+\newtcbtheorem[number within=section]{corollary}{Corollary}%
 {
 	prefab,
 	colframe=corollary,
@@ -57,7 +57,7 @@
 }{cor}
 
 % lemma environment
-\newtcbtheorem[number within=section]{lemma}{補題}%
+\newtcbtheorem[number within=section]{lemma}{Lemma}%
 {
 	prefab,
 	colframe=lemma,
@@ -67,7 +67,7 @@
 }{lem}
 
 % definition environment
-\newtcbtheorem[number within=section]{definition}{定義}%
+\newtcbtheorem[number within=section]{definition}{Definition}%
 {
 	prefab,
 	colframe=definition,
@@ -77,13 +77,12 @@
 }{def}
 
 % eg envrinment
-\newtcbtheorem[number within=section]{eg}{例}%
+\newtcbtheorem[number within=section]{eg}{Example}%
 {
 	prefab,
 	colframe=eg,
 	colback=eg!2!white,
 	borderline west={4pt}{-4pt}{eg},
-	before lower=解法:\\
 }{eg}
 
 % warning environment
