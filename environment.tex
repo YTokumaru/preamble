@@ -8,6 +8,7 @@
 \definecolor{corollary}{rgb}{0.5, 0.0, 0.13}
 \definecolor{lemma}{rgb}{0.82, 0.71, 0.55}
 \definecolor{eg}{rgb}{0.03, 0.48, 0.5}
+\definecolor{problem}{rgb}{0.4, 0.4, 0.4}
 
 %　Prefab for environments
 \tcbset{prefab/.style={
@@ -84,6 +85,16 @@
 	colback=eg!2!white,
 	borderline west={4pt}{-4pt}{eg},
 }{eg}
+
+% problem environment
+\newtcbtheorem[number within=section]{problem}{Problem}%
+{
+	prefab,
+	colframe=problem,
+	colback=problem!2!white,
+	borderline west={4pt}{-4pt}{problem},
+}{lem}
+
 
 % warning environment
 \newtcolorbox{warning}[1][]{enhanced,
