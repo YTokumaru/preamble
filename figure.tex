@@ -9,7 +9,7 @@
 \usepackage{pgfplots}
 \usepgfplotslibrary{fillbetween}
 \pgfmathdeclarefunction{gauss}{2}{%
-  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+	\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
 }
 
 \usepackage{tikz}
@@ -36,6 +36,8 @@
 				}
 		},
 }
+
+\usepackage{tikz-feynman}
 
 
 % Package for tables
