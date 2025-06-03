@@ -4,9 +4,11 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{capt-of}
 
 % Packages for diagrams
 \usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 \usepgfplotslibrary{fillbetween}
 \pgfmathdeclarefunction{gauss}{2}{%
 	\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
@@ -37,7 +39,7 @@
 		},
 }
 
-\usepackage{tikz-feynman}
+\usepackage[compat=1.1.0]{tikz-feynman}
 
 
 % Package for tables
